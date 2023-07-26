@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Title Goes Here</title>
+    <title>ফলের বাজার</title>
 
     <!-- Tailwind & Daisy UI CDN link -->
     <link
@@ -28,6 +28,11 @@
           container: {
             center: true,
           },
+
+          // backgroundImage: {
+          //   "hero-pattern": "url('/img/hero-pattern.svg')",
+          //   "footer-texture": "url('/img/footer-texture.png')",
+          // },
         },
       };
     </script>
@@ -50,6 +55,12 @@
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
+      }
+      .committee {
+        /* background: url("./assets/images/team.png") top left no-repeat \ cover; */
+        background: #00000050 url("./assets/images/team.png") top left no-repeat;
+        background-size: cover;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -174,12 +185,12 @@
           >
             <a
               href="#slide4"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❮</a
             >
             <a
               href="#slide2"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❯</a
             >
           </div>
@@ -212,12 +223,12 @@
           >
             <a
               href="#slide1"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❮</a
             >
             <a
               href="#slide3"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❯</a
             >
           </div>
@@ -250,12 +261,12 @@
           >
             <a
               href="#slide2"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❮</a
             >
             <a
               href="#slide4"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❯</a
             >
           </div>
@@ -288,19 +299,19 @@
           >
             <a
               href="#slide3"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❮</a
             >
             <a
               href="#slide1"
-              class="btn btn-circle bg-black text-white border-0 font-normal text-xl"
+              class="btn btn-circle bg-black/50 text-white border-0 font-normal text-xl"
               >❯</a
             >
           </div>
         </div>
       </div>
-      <!-- Carousel Bottom Section -->
 
+      <!-- Carousel Bottom Section -->
       <div
         class="w-11/12 -mt-24 mx-auto rounded-xl card bg-white shadow-xl hidden md:grid grid-flow-col justify-center pb-10 font-medium"
       >
@@ -398,13 +409,12 @@
         </div>
 
         <!-- Card Section -->
-        <div class="grid grid-flow-row md:grid-flow-col gap-5 mt-10 md:mt-20">
+        <div class="grid grid-flow-row md:grid-flow-col md:grid-rows-2 gap-5 mt-10 md:mt-20">
           <div class="card bg-base-100 border">
             <figure class="px-10 pt-10">
               <img
                 src="./assets/images/fruit6.png"
                 alt="Apple"
-                class="rounded-xl"
               />
             </figure>
             <div class="card-body items-center text-center">
@@ -414,6 +424,7 @@
                 12.90$ - 18.85$
               </h2>
               <p class="font-medium">Apple</p>
+              <!-- Rating -->
               <div class="rating rating-lg rating-half my-5">
                 <input type="radio" name="rating-10" class="rating-hidden" />
                 <input
@@ -485,7 +496,6 @@
               <img
                 src="./assets/images/fruit7.png"
                 alt="Orange"
-                class="rounded-xl"
               />
             </figure>
             <div class="card-body items-center text-center">
@@ -495,6 +505,7 @@
                 12.90$ - 18.85$
               </h2>
               <p class="font-medium">Orange</p>
+              <!-- Rating -->
               <div class="rating rating-lg rating-half my-5">
                 <input type="radio" name="rating-11" class="rating-hidden" />
                 <input
@@ -566,7 +577,6 @@
               <img
                 src="./assets/images/fruit8.png"
                 alt="Dragon"
-                class="rounded-xl"
               />
             </figure>
             <div class="card-body items-center text-center">
@@ -576,6 +586,7 @@
                 12.90$ - 18.85$
               </h2>
               <p class="font-medium">Dragon</p>
+              <!-- Rating -->
               <div class="rating rating-lg rating-half my-5">
                 <input type="radio" name="rating-12" class="rating-hidden" />
                 <input
@@ -647,7 +658,6 @@
               <img
                 src="./assets/images/fruit9.png"
                 alt="Banana"
-                class="rounded-xl"
               />
             </figure>
             <div class="card-body items-center text-center">
@@ -657,6 +667,7 @@
                 12.90$ - 18.85$
               </h2>
               <p class="font-medium">Banana</p>
+              <!-- Rating -->
               <div class="rating rating-lg rating-half my-5">
                 <input type="radio" name="rating-13" class="rating-hidden" />
                 <input
@@ -731,16 +742,16 @@
       </section>
 
       <!-- Meet The Team Section -->
-      <section class="relative">
-        <img
-          class="md:w-full min-h-screen rounded-lg"
-          src="./assets/images/team.png"
-          alt="Team Members"
-        />
+      <section class="committee min-h-[450px] flex items-center">
+        <!-- <img
+            class="md:w-full min-h-screen rounded-lg"
+            src="./assets/images/team.png"
+            alt="Team Members"
+          /> -->
         <div
-          class="absolute min-h-screen md:min-h-screen md:w-full md:justify-center md:flex md:flex-col md:items-center bg-slate-800/50 top-0 left-0 rounded-lg text-white"
+          class="p-10 min-h-screen md:min-h-screen md:w-full md:justify-center flex md:flex-col md:items-center bg-slate-800/50 top-0 left-0 rounded-lg text-white"
         >
-          <div class="text-center p-5 md:pt-10">
+          <div class="text-center p-5">
             <h2 class="text-xl md:text-5xl font-extrabold my-5 md:my-10">
               Meet the team section
             </h2>
@@ -752,9 +763,9 @@
           </div>
 
           <!-- Contacts Description -->
-          <div class="flex flex-col md:flex-row gap-5 md:mt-10">
+          <div class="flex flex-col flex-wrap md:flex-row gap-5 md:mt-10">
             <!-- member 1 -->
-            <div class="card">
+            <div class="card min-w-fit">
               <figure class="pt-0">
                 <img src="./assets/images/member1.png" alt="Banana" />
               </figure>
@@ -783,7 +794,7 @@
             </div>
             <!-- member 1 -->
             <!-- member 2 -->
-            <div class="card">
+            <div class="card min-w-fit">
               <figure class="pt-0">
                 <img src="./assets/images/member3.png" alt="Banana" />
               </figure>
@@ -792,13 +803,19 @@
                 <p class="font-medium text-lg">fruits expert</p>
                 <!-- social media -->
                 <div class="card-actions">
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-facebook"></i>
                   </button>
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-twitter"></i>
                   </button>
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-linkedin"></i>
                   </button>
                 </div>
@@ -806,7 +823,7 @@
             </div>
             <!-- member 2 -->
             <!-- member 3 -->
-            <div class="card">
+            <div class="card min-w-fit">
               <figure class="pt-0">
                 <img src="./assets/images/member1.png" alt="Banana" />
               </figure>
@@ -815,13 +832,19 @@
                 <p class="font-medium text-lg">fruits expert</p>
                 <!-- social media -->
                 <div class="card-actions">
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-facebook"></i>
                   </button>
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-twitter"></i>
                   </button>
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-linkedin"></i>
                   </button>
                 </div>
@@ -829,7 +852,7 @@
             </div>
             <!-- member 3 -->
             <!-- member 4 -->
-            <div class="card">
+            <div class="card min-w-fit">
               <figure class="pt-0">
                 <img src="./assets/images/member3.png" alt="Banana" />
               </figure>
@@ -838,13 +861,19 @@
                 <p class="font-medium text-lg">fruits expert</p>
                 <!-- social media -->
                 <div class="card-actions">
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-facebook"></i>
                   </button>
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-twitter"></i>
                   </button>
-                  <button class="btn btn-xs btn-circle bg-red-500 text-white">
+                  <button
+                    class="btn btn-xs btn-circle border-0 bg-red-500 text-white"
+                  >
                     <i class="fa fa-linkedin"></i>
                   </button>
                 </div>
