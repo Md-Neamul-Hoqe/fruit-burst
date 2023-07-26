@@ -153,7 +153,7 @@
           <div
             class="hero min-h-80 md:min-h-screen bg-gradient-to-b from-black to-base-100 absolute"
           >
-            <div class="hero-content text-center">
+            <div class="hero-content text-center mt-20 md:mt-5">
               <div class="max-w-3xl text-white">
                 <h1 class="text-2xl md:text-7xl font-extrabold">
                   Delicious Fruits: Nature's Bounty
@@ -191,7 +191,7 @@
           <div
             class="hero min-h-80 md:min-h-screen bg-gradient-to-b from-black to-base-100 absolute"
           >
-            <div class="hero-content text-center">
+            <div class="hero-content text-center mt-20 md:mt-5">
               <div class="max-w-3xl text-white">
                 <h1 class="text-2xl md:text-7xl font-extrabold">
                   Exotic tastes at your doorstep
@@ -229,7 +229,7 @@
           <div
             class="hero min-h-80 md:min-h-screen bg-gradient-to-b from-black to-base-100 absolute"
           >
-            <div class="hero-content text-center">
+            <div class="hero-content text-center mt-20 md:mt-5">
               <div class="max-w-3xl text-white">
                 <h1 class="text-2xl md:text-7xl font-extrabold">
                   Exotic tastes at your doorstep
@@ -267,7 +267,7 @@
           <div
             class="hero min-h-80 md:min-h-screen bg-gradient-to-b from-black to-base-100 absolute"
           >
-            <div class="hero-content text-center">
+            <div class="hero-content text-center mt-20 md:mt-5">
               <div class="max-w-3xl text-white">
                 <h1 class="text-2xl md:text-7xl font-extrabold">
                   Exotic tastes at your doorstep
@@ -733,15 +733,15 @@
       <!-- Meet The Team Section -->
       <section class="relative">
         <img
-          class="md:w-full h-screen rounded-lg"
+          class="md:w-full min-h-screen rounded-lg"
           src="./assets/images/team.png"
           alt="Team Members"
         />
         <div
-          class="absolute min-h-full md:max-h-screen md:w-full md:justify-center md:flex md:flex-col md:items-center bg-slate-800/50 top-0 left-0 rounded-lg text-white"
+          class="absolute min-h-screen md:min-h-screen md:w-full md:justify-center md:flex md:flex-col md:items-center bg-slate-800/50 top-0 left-0 rounded-lg text-white"
         >
-          <div class="text-center p-5">
-            <h2 class="text-xl md:text-5xl font-extrabold my-5 md:mb-10">
+          <div class="text-center p-5 md:pt-10">
+            <h2 class="text-xl md:text-5xl font-extrabold my-5 md:my-10">
               Meet the team section
             </h2>
             <p class="md:w-3/5 mx-auto text-sm md:text-lg font-medium">
@@ -1021,10 +1021,7 @@
       <form method="dialog" class="modal-box">
         <div class="card bg-base-100">
           <figure class="px-10 pt-10">
-            <img
-              src="./assets/images/fruit6.png"
-              alt="Apple"
-            />
+            <img src="./assets/images/fruit6.png" alt="Apple" />
           </figure>
           <div class="card-body items-center text-center">
             <h2
@@ -1090,7 +1087,7 @@
                 class="bg-red-500 mask mask-star-2 mask-half-2"
               />
             </div>
-            <div class="card-actions flex">
+            <div class="modal-action">
               <button
                 class="font-bold btn btn-outline text-red-500 hover:bg-red-500 hover:text-white"
               >
@@ -1104,20 +1101,13 @@
             </div>
           </div>
         </div>
-        <div class="modal-action">
-          <!-- if there is a button in form, it will close the modal -->
-          <button class="btn">Close</button>
-        </div>
       </form>
     </dialog>
     <dialog id="Orange" class="modal">
       <form method="dialog" class="modal-box">
         <div class="card bg-base-100">
           <figure class="px-10 pt-10">
-            <img
-              src="./assets/images/fruit7.png"
-              alt="Orange"
-            />
+            <img src="./assets/images/fruit7.png" alt="Orange" />
           </figure>
           <div class="card-body items-center text-center">
             <h2
@@ -1183,7 +1173,7 @@
                 class="bg-red-500 mask mask-star-2 mask-half-2"
               />
             </div>
-            <div class="card-actions flex">
+            <div class="modal-actions flex gap-3">
               <button
                 class="font-bold btn btn-outline text-red-500 hover:bg-red-500 hover:text-white"
               >
@@ -1197,20 +1187,13 @@
             </div>
           </div>
         </div>
-        <div class="modal-action">
-          <!-- if there is a button in form, it will close the modal -->
-          <button class="btn">Close</button>
-        </div>
       </form>
     </dialog>
-    <dialog id="Dragon" class="modal">
+    <dialog id="Dragon" class="modal modal-">
       <form method="dialog" class="modal-box">
         <div class="card bg-base-100">
           <figure class="px-10 pt-10">
-            <img
-              src="./assets/images/fruit8.png"
-              alt="Dragon"
-            />
+            <img src="./assets/images/fruit8.png" alt="Dragon" />
           </figure>
           <div class="card-body items-center text-center">
             <h2
@@ -1276,7 +1259,7 @@
                 class="bg-red-500 mask mask-star-2 mask-half-2"
               />
             </div>
-            <div class="card-actions flex">
+            <div class="modal-actions flex gap-3">
               <button
                 class="font-bold btn btn-outline text-red-500 hover:bg-red-500 hover:text-white"
               >
@@ -1290,20 +1273,13 @@
             </div>
           </div>
         </div>
-        <div class="modal-action">
-          <!-- if there is a button in form, it will close the modal -->
-          <button class="btn">Close</button>
-        </div>
       </form>
     </dialog>
     <dialog id="Banana" class="modal">
       <form method="dialog" class="modal-box">
         <div class="card bg-base-100">
           <figure class="px-10 pt-10">
-            <img
-              src="./assets/images/fruit9.png"
-              alt="Banana"
-            />
+            <img src="./assets/images/fruit9.png" alt="Banana" />
           </figure>
           <div class="card-body items-center text-center">
             <h2
@@ -1369,7 +1345,7 @@
                 class="bg-red-500 mask mask-star-2 mask-half-2"
               />
             </div>
-            <div class="card-actions flex">
+            <div class="modal-action flex">
               <button
                 class="font-bold btn btn-outline text-red-500 hover:bg-red-500 hover:text-white"
               >
@@ -1382,10 +1358,6 @@
               </button>
             </div>
           </div>
-        </div>
-        <div class="modal-action">
-          <!-- if there is a button in form, it will close the modal -->
-          <button class="btn">Close</button>
         </div>
       </form>
     </dialog>
