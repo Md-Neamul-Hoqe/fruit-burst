@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ফলের বাজার</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
     <!-- Tailwind & Daisy UI CDN link -->
     <link
@@ -20,7 +21,6 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
               "fruid-red": "#F85459",
             },
           },
@@ -28,11 +28,6 @@
           container: {
             center: true,
           },
-
-          // backgroundImage: {
-          //   "hero-pattern": "url('/img/hero-pattern.svg')",
-          //   "footer-texture": "url('/img/footer-texture.png')",
-          // },
         },
       };
     </script>
@@ -66,8 +61,8 @@
   </head>
   <body class="font-lato" data-theme="light">
     <!-- Navigation Bar -->
-    <nav class="container py-5 md:py-20 px-5 md:px-0">
-      <div class="navbar bg-white md:bg-red-500 rounded-[60px] py-0 md:py-4">
+    <nav class="container py-5 lg:py-20 px-10">
+      <div class="navbar bg-white md:bg-red-500 rounded-[60px] py-0 px-10">
         <!-- menu bar -->
         <div class="hidden md:navbar-start md:flex">
           <ul
@@ -156,7 +151,7 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="container px-5 md:px-0">
+    <header class="container px-10">
       <div class="carousel w-full h-80 md:h-screen rounded-lg">
         <!-- Slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
@@ -315,33 +310,33 @@
       <div
         class="w-11/12 -mt-24 mx-auto rounded-xl card bg-white shadow-xl hidden md:grid grid-flow-col justify-center pb-10 font-medium"
       >
-        <div class="flex flex-col items-center">
-          <figure class="px-5 pt-5">
-            <img src="./assets/images/fruit1.png" alt="Strawbary" />
+        <div class="flex flex-col justify-end items-center">
+          <figure class="px-5">
+            <img class="max-w-full" src="./assets/images/fruit1.png" alt="Strawbary" />
           </figure>
           <h2 class="mt-2 card-title">Strawbary</h2>
         </div>
-        <div class="flex flex-col items-center">
-          <figure class="px-5 pt-5">
-            <img src="./assets/images/fruit2.png" alt="Strawbary" />
+        <div class="flex flex-col justify-end items-center">
+          <figure class="px-5">
+            <img class="max-w-full" src="./assets/images/fruit2.png" alt="Strawbary" />
           </figure>
           <h2 class="mt-2 card-title">Mango</h2>
         </div>
-        <div class="flex flex-col items-center">
-          <figure class="px-5 pt-5">
-            <img src="./assets/images/fruit3.png" alt="Strawbary" />
+        <div class="flex flex-col justify-end items-center">
+          <figure class="px-5">
+            <img class="max-w-full" src="./assets/images/fruit3.png" alt="Strawbary" />
           </figure>
           <h2 class="mt-2 card-title">Banana</h2>
         </div>
-        <div class="flex flex-col items-center">
-          <figure class="px-5 pt-5">
-            <img src="./assets/images/fruit4.png" alt="Strawbary" />
+        <div class="flex flex-col justify-end items-center">
+          <figure class="px-5">
+            <img class="max-w-full" src="./assets/images/fruit4.png" alt="Strawbary" />
           </figure>
           <h2 class="mt-2 card-title">Red Dragon</h2>
         </div>
-        <div class="flex flex-col items-center">
-          <figure class="px-5 pt-5">
-            <img src="./assets/images/fruit5.png" alt="Strawbary" />
+        <div class="flex flex-col justify-end items-center">
+          <figure class="px-5">
+            <img class="max-w-full" src="./assets/images/fruit5.png" alt="Strawbary" />
           </figure>
           <h2 class="mt-2 card-title">Apple</h2>
         </div>
@@ -349,7 +344,7 @@
     </header>
 
     <!-- Content Section -->
-    <main class="container px-5 md:px-0">
+    <main class="container px-10">
       <!-- Deal of the day section -->
       <section class="pt-10 md:py-20 flex flex-col justify-center">
         <div class="flex justify-between flex-col items-center md:flex-row">
@@ -409,7 +404,7 @@
         </div>
 
         <!-- Card Section -->
-        <div class="grid grid-flow-row md:grid-flow-col md:grid-rows-2 gap-5 mt-10 md:mt-20">
+        <div class="grid grid-flow-row md:grid-cols-3 sm:grid-cols-2 xl:grid-rows-1 gap-5 mt-10 md:mt-20 w-2/3 sm:w-full mx-auto">
           <div class="card bg-base-100 border">
             <figure class="px-10 pt-10">
               <img
@@ -743,13 +738,8 @@
 
       <!-- Meet The Team Section -->
       <section class="committee min-h-[450px] flex items-center">
-        <!-- <img
-            class="md:w-full min-h-screen rounded-lg"
-            src="./assets/images/team.png"
-            alt="Team Members"
-          /> -->
         <div
-          class="p-10 min-h-screen md:min-h-screen md:w-full md:justify-center flex md:flex-col md:items-center bg-slate-800/50 top-0 left-0 rounded-lg text-white"
+          class="p-10 min-h-screen md:min-h-screen md:w-full md:justify-center flex flex-col items-center bg-slate-800/50 top-0 left-0 rounded-lg text-white"
         >
           <div class="text-center p-5">
             <h2 class="text-xl md:text-5xl font-extrabold my-5 md:my-10">
@@ -765,7 +755,7 @@
           <!-- Contacts Description -->
           <div class="flex flex-col flex-wrap md:flex-row gap-5 md:mt-10">
             <!-- member 1 -->
-            <div class="card min-w-fit">
+            <div class="card min-w-fit flex-1">
               <figure class="pt-0">
                 <img src="./assets/images/member1.png" alt="Banana" />
               </figure>
@@ -794,7 +784,7 @@
             </div>
             <!-- member 1 -->
             <!-- member 2 -->
-            <div class="card min-w-fit">
+            <div class="card min-w-fit flex-1">
               <figure class="pt-0">
                 <img src="./assets/images/member3.png" alt="Banana" />
               </figure>
@@ -823,7 +813,7 @@
             </div>
             <!-- member 2 -->
             <!-- member 3 -->
-            <div class="card min-w-fit">
+            <div class="card min-w-fit flex-1">
               <figure class="pt-0">
                 <img src="./assets/images/member1.png" alt="Banana" />
               </figure>
@@ -852,7 +842,7 @@
             </div>
             <!-- member 3 -->
             <!-- member 4 -->
-            <div class="card min-w-fit">
+            <div class="card min-w-fit flex-1">
               <figure class="pt-0">
                 <img src="./assets/images/member3.png" alt="Banana" />
               </figure>
@@ -897,16 +887,16 @@
           </p>
         </div>
 
-        <div class="flex flex-col md:flex-row gap-5 my-10 items-center">
+        <div class="flex flex-col lg:flex-row gap-5 my-10 items-center">
           <!-- left -->
           <div class="space-y-10">
-            <div class="flex flex-col md:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center">
               <i
                 class="fa text-gray-500 fa-users text-xl btn btn-circle p-2 m-5"
               ></i>
-              <div class="text-center md:text-left">
+              <div class="text-center lg:text-left">
                 <h4 class="text-2xl font-extrabold">Dedicated Team</h4>
-                <hr class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto md:mx-0" />
+                <hr class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto lg:mx-0" />
                 <p class="text-lg font-medium">
                   We won't tired or sleep, untill to reach to you. Professional
                   employees are there for you to pick the most amazing and fresh
@@ -914,26 +904,26 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col md:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center">
               <i
                 class="fa text-gray-500 fa-seedling text-xl btn btn-circle p-2 m-5"
               ></i>
-              <div class="text-center md:text-left">
+              <div class="text-center lg:text-left">
                 <h4 class="text-2xl font-extrabold">Fresh Best</h4>
-                <hr class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto md:mx-0" />
+                <hr class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto lg:mx-0" />
                 <p class="text-lg font-medium">
                   Fresh food maintain your neutration. Professional employees
                   are there for you to pick the most amazing and fresh fruits
                 </p>
               </div>
             </div>
-            <div class="flex flex-col md:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center">
               <i
                 class="fa text-gray-500 fa-apple-whole text-xl btn btn-circle p-2 m-5"
               ></i>
-              <div class="text-center md:text-left">
+              <div class="text-center lg:text-left">
                 <h4 class="text-2xl font-extrabold">Gift Certificates</h4>
-                <hr class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto md:mx-0" />
+                <hr class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto lg:mx-0" />
                 <p class="text-lg font-medium">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits
@@ -952,14 +942,14 @@
 
           <!-- right -->
           <div class="space-y-10">
-            <div class="flex flex-col items-center md:flex-row-reverse">
+            <div class="flex flex-col items-center lg:flex-row-reverse">
               <i
                 class="fa text-gray-500 fa-truck-ramp-box text-center text-xl btn btn-circle p-2 m-5"
               ></i>
-              <div class="text-center md:text-right">
+              <div class="text-center lg:text-right">
                 <h4 class="text-2xl font-extrabold">Integrated Supplier</h4>
                 <hr
-                  class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto md:mx-0 md:ms-auto"
+                  class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto lg:mx-0 lg:ms-auto"
                 />
                 <p class="text-lg font-medium">
                   Professional employees are there for you to pick the most
@@ -967,14 +957,14 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col items-center md:flex-row-reverse">
+            <div class="flex flex-col items-center lg:flex-row-reverse">
               <i
                 class="fa text-gray-500 fa-users text-xl btn btn-circle p-2 m-5"
               ></i>
-              <div class="text-center md:text-right">
+              <div class="text-center lg:text-right">
                 <h4 class="text-2xl font-extrabold">Sustainable Practice</h4>
                 <hr
-                  class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto md:mx-0 md:ms-auto"
+                  class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto lg:mx-0 lg:ms-auto"
                 />
                 <p class="text-lg font-medium">
                   Professional employees are there for you to pick the most
@@ -982,14 +972,14 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col items-center md:flex-row-reverse">
+            <div class="flex flex-col items-center lg:flex-row-reverse">
               <i
                 class="fa text-gray-500 fa-sack-dollar text-xl btn btn-circle p-2 m-5"
               ></i>
-              <div class="text-center md:text-right">
+              <div class="text-center lg:text-right">
                 <h4 class="text-2xl font-extrabold">The Benefits Only</h4>
                 <hr
-                  class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto md:mx-0 md:ms-auto"
+                  class="w-28 h-0.5 bg-neutral-950 my-3 mx-auto lg:mx-0 lg:ms-auto"
                 />
                 <p class="text-lg font-medium">
                   We take a little benefits. Professional employees are there
